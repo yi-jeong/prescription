@@ -1,18 +1,82 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+:root {
+	--vh: calc(var(--vh, 1vh) * 1); /* 초기 값은 1vh로 설정합니다. */
+}
+  
+@media (min-width: 768px) {
+  :root {
+    --vh: calc(var(--vh, 1vh) * 1.5); /* 브레이크포인트가 768px 이상일 경우, --vh 변수 값을 1.5vh로 설정합니다. */
+  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* 브라우저 높이가 100vh 이상일 경우, --vh 변수 값을 1vh로 설정합니다. */
+@media (min-height: 100vh) {
+  :root {
+    --vh: 1vh;
+  }
 }
 
-* {
-  box-sizing: border-box;
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+margin: 0; padding: 0; border: 0; font-size: 16px;   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; font-weight: 300; 
+vertical-align: baseline; word-break: keep-all; box-sizing: border-box;}
+a{text-decoration: none; color:#333;}
+b{font-weight: 700;}
+button{background: transparent; border: transparent; padding: 0; margin: 0;}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {font-size: 1rem;line-height: 1;}
+html, body{height: 100%;}
+ol, ul, li{list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ""; content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+
+input[type="chekbox"] { display: none;;}
+select{ font-size: 1rem; }
+button:hover,
+button:focus{ color: #333; outline: unset; box-shadow: unset;}
+.form-control:hover,
+.form-control:focus{ outline: unset; box-shadow: unset;}
+.form-floating>.form-control:focus,
+.form-floating>.form-control:not(:placeholder-shown){ padding: 0;}
+
+.swiper-pagination-fraction{
+  z-index: 1;
+  padding: .25rem;
+  width: auto !important;
+  left: auto !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  font-size: .8rem !important;
+}
+.swiper-pagination-fraction::after{
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #333;
+  border-top-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  opacity: .3;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+.swiper-pagination-fraction span{
+  font-size: .8rem !important;
+}
+.swiper-pagination-current{ color: #fff; }
+
+.container {
+  padding: 0 1rem;
+  position: relative;
+  width: 100%;
+  max-width: 767px;
+  margin: 0 auto;
 }
 
 @media (prefers-color-scheme: dark) {

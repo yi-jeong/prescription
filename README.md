@@ -1,34 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 닥터처방
 
-## Getting Started
+![웹 1920 – 30.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/04967814-b4f5-46aa-b60a-95e5ed099723/%E1%84%8B%E1%85%B0%E1%86%B8_1920__30.png)
 
-First, run the development server:
+### **👦 프로젝트 작업 인원**  
+---
+- **디자인 및 기획 담당**: 1명  
+- **프론트엔드 담당**: 1명  
+- **백엔드 담당**: 2명  
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### **📚 당신의 건강, 편리하게 닥터처방으로 관리하세요.**  
+---
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+세상은 빠르게 변하고 있지만, 우리는 여전히 처방전과 영수증을 종이로 사용하고 있습니다.
+`닥터처방` 은 **우리의 건강 관리를 쉽고 편리하게 관리**해 줍니다. 😀  
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+`닥터처방` 은 깔끔한 디자인과 직관적인 사용자 인터페이스를 갖추고 있어, **처방전과 영수증을 손쉽게 관리**할 수 있습니다. 이제 종이로 받던 영수증과 처방전은 더 이상 필요하지 않아요. **앱에 모든 정보가 저장되기 때문에, 언제 어디서든 필요한 정보를 쉽게 찾아볼 수** 있답니다. 
 
-## Learn More
+병원 예약 기능을 통해, 직접 **병원에 방문하지 않고도 원하는 날짜와 시간에 예약**을 할 수 있어요. 또한, **처방받은 약의 상세 정보를 앱에서 확인**할 수 있어, **복용법이나 부작용 등에 대한 안전한 정보**를 얻을 수 있답니다. 
 
-To learn more about Next.js, take a look at the following resources:
+`닥터처방` 은 **환경을 생각**합니다. 종이 사용량을 줄이는 것은 단순히 편의성을 높이는 것뿐만 아니라, 지구를 지키는 작은 발걸음입니다.  `닥터처방` 앱을 사용함으로써, 우리는 책임감 있는 소비자로서 지속 가능한 미래를 만들어갈 수 있습니다. 🙌
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`닥터처방` 은 **개인 정보 보호에도 최선**을 다하고 있습니다. 사용자의 정보는 **안전하게 암호화되어 저장**되며, 개인 정보를 제3자와 공유하지 않습니다. 건강 정보를 안전하게 보관하면서도, 필요할 때 쉽게 접근할 수 있는 플랫폼을 제공합니다.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+### **✅ 환경구성**    
+---
+- React 18.2 + Next.js 13.3 + TypeScript 5  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### **✅ 라이브러리 구성**  
+---
+`Recoil` `axios` `emotion` `react-icons` `swiper`  
