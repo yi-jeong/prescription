@@ -36,7 +36,7 @@ export default function Home() {
   useEffect(()=>{
     setTimeout(()=>{
       router.replace("/main")
-    },3000)
+    },2000)
   },[])
 
   return (
