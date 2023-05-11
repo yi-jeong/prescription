@@ -3,11 +3,11 @@ import Image from "next/image"
 import Link from "next/link"
 
 const MenuWrap = styled.div`
-
 `
 
 const MenuList = styled.div`
     position: relative;
+    z-index: 1;
     margin: -1.25rem auto 0;
     padding: .5rem;
     background: #fff;

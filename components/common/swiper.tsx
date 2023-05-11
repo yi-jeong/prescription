@@ -11,6 +11,9 @@ import 'swiper/css/scrollbar';
 import styled from '@emotion/styled';
 
 
+
+/*****  Main. bannerSlide *****/
+
 const Box = styled.div<{ backColor: string }>`
     padding: 1rem;
     display: flex;
@@ -77,6 +80,12 @@ export function BannerSwiper() {
     </Swiper>
   );
 };
+
+/*****  Main. bannerSlide end *****/
+
+
+
+/*****  Main. ContentSlide *****/
 
 const ContentWrap = styled.div`
     display: flex;
@@ -176,3 +185,5 @@ export function ContentBoxSwiper(){
         </Swiper>
     )
 }
+
+/*****  Main. ContentSlide End *****/

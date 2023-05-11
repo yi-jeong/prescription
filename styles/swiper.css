@@ -29,3 +29,12 @@
 .contentSwiper .swiper-wrapper{ padding-bottom: 1.5rem !important; }
 .contentSwiper .swiper-pagination{ bottom: 0 !important; }
 .contentSwiper .swiper-pagination .swiper-pagination-bullet-active{ background: #535353 !important; }
+
+.main-top-slide .swiper-slide{ opacity: 0 !important;}
+.main-top-slide .swiper-slide.swiper-slide-active{ opacity: 1 !important; }
+.main-top-slide .swiper-pagination{ right: 1rem !important; bottom: 1.5rem !important; }
+.main-top-slide .swiper-pagination-fraction::after{ border-radius: .25rem !important; }
+
+.time-review-slide  .swiper-wrapper{ padding-bottom: 1rem !important; }
+.time-review-slide  .swiper-pagination{ bottom: 0 !important; }
+.time-review-slide  .swiper-pagination .swiper-pagination-bullet-active{ background: #535353 !important; }

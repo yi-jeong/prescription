@@ -8,6 +8,7 @@ import ContentBox from "../../components/main/contentBox"
 import { ContentInfoFillter, ContentReviewFillter } from "../../constants/fillter"
 import { ContentBoxSwiper } from "../../components/common/swiper"
 import ListBoxComponent from "../../components/main/listBox"
+import TimeReviewComponent from "../../components/main/timeReview"
 
 const MainPageWrap = styled.div`
 
@@ -32,11 +33,16 @@ export default function MainPage(){
             </ContentBox>
             <LineComponent />
 
-            { /* 이태원동 병원 실시간 후기 */}
-            <ContentBox title={"이태원동 병원 실시간 후기"} fillterList={ContentReviewFillter}>
+            { /* 이태원동 후기 많은 병원 */}
+            <ContentBox title={"이태원동 후기 많은 병원"} fillterList={ContentReviewFillter}>
                 <ListBoxComponent />
             </ContentBox>
             <LineComponent />
+
+            { /* 이태원동 병원 실시간 후기 */}
+            <ContentBox title={"이태원동 병원 실시간 후기"} fillterList={ContentReviewFillter}>
+                <TimeReviewComponent />
+            </ContentBox>
 
             
         </NavLayout>
